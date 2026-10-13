@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>practica</title>
+	<style>
+		* {
+    box-sizing: border-box;}
+body {
+margin: 0;
+font-family: Arial;
+ background: #f4f7fc;
+ color: #263449;}
+
+header {
+background: #2864e8;
+color: white;
+padding: 20px;
+position: relative;}
+header h1 {
+margin-top: 0;}
+nav {
+display: flex;
+flex-wrap: wrap;
+gap: 22px;
+margin-top: 20px;}
+nav a {
+color: white;
+text-decoration: none;}
+nav a:hover {
+text-decoration: underline;}
+button {
+background: #2864e8;
+color: white;
+border: none;
+padding: 10px 18px;
+cursor: pointer;}
+header button {
+background: white;
+ color: #2864e8;}
+ position: absolute;
+ top: 20px;
+ right: 20px;}
+
+.contenedor {
+display: flex;
+gap: 22px;
+padding: 20px;}
+
+main {
+flex: 3;
+min-width: 0;}
+
+section {
+background: white;
+border: 2px dashed #8C4966;
+padding: 12px;
+margin-bottom: 12px;}
+
+	aside {
+flex: 1;
+ background: #dce8fb;
+padding: 18px;}
+}
+table {
+	background: lightblue;
+width: 100%;
+border-collapse: collapse;}
+th{ 
+background:#2864e8;
+color: white; }
+
+form {
+display: grid;
+grid-template-columns: 120px minmax(0, 1fr);
+gap: 10px;
+max-width: 450px;}
+
+input, select {
+ width: 100%;
+padding: 6px;}
+
+
+form button {
+grid-column: 1 / -1;
+justify-self: start;}
+
+	
+footer {
+background: #1e293b;
+color: white;
+text-align: center;
+padding: 20px;}
+aside {
+	width: 100%;}
+form {
+grid-template-columns: 1fr;}
+ header button{
+ position: static;
+margin-top: 15px;</style>
+
+</head>
+<body>
+	<header>
+<h1>MI PAGINA WEB</h1>
+<nav>
+	<a href="#texto">texto</a>
+	<a href="#listas">texto</a>
+	<a href="#tablas">texto</a>
+	<a href="#multimedia">texto</a>
+	<a href="#formulaeio">texto</a>
+	<a href="#contacto">texto</a>
+	<a href="#formulario">Contacto</a>
+</nav>
+</header>
+<div class="contenedor">
+	<main>
+		<h3>elementos de texto</h3>
+		<section id="texto">
+<p><b>parrafo en negrita</b>, <i>cursiva </i> <mark>y resaltado. citas destacada esterna</mark></p>
+</section>
+
+
+	
+	<section id="listas">
+		<h3>listas</h3>
+
+<ul><li> HTML</li> <li>CSS </li> <li>JavaScript</li></ul>
+
+<ol><li>Crear</li><li>Escribir</li><li>Publicar</li></ol>
+<p>lista de definiciones:termino y descrpcion</p>
+</section>
+<section id="tabla">
+<h1>Tabla</h1>
+<table border="2" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Tecnologia</th>
+            <th>Funciones</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Estructura</td> 
+            
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Diseño</td>
+            
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Interactividad</td>
+            
+        </tr>
+    </table>
+</section>
+<br>
+<section id="formulario">
+<h3>FORMULARIO</h3>
+<form>
+<label form="Nombre">Nombre:</label>
+<input type="text" name="Nombre">
+
+<label form="Correo">Correo</label>
+<input type="email" name="Correo">
+
+<label form="Pais">Pais:</label>
+<select id="Pais" name="pais" required>
+
+	<option value="MEXICO">MEXICO</option>
+	<option value="EEUU">EEUU</option>
+	<option value="BRASIL">BRAZIL</option>
+</select>
+<button type="submit">Enviar</button>
+</form>
+</section>
+</main>
+<aside id="contacto">
+	<h3>BARRA LATERAL</h3>
+	<p>CONTENIDO RELACIONADO</p>
+	<datalist>
+		<summary>DESPEGABLE</summary>
+		<p>VER MAS CONTENIDO</p>
+	</datalist>
+</aside>
+</div>
+</body>
+</html>
